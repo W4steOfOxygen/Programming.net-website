@@ -1,0 +1,298 @@
+
+
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: monospace;
+    scroll-behavior: smooth;
+}
+header{
+    background-color: rgb(100, 50, 50);
+}
+
+nav {
+    background-color: rgb(73, 32, 32);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+section {
+    padding: 20px;
+    background-color: whitesmoke;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.product {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.wallet {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.transaction {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.profileContainer {
+    position: absolute;
+    top: 28px;
+    right: 50px;
+    max-width: 50px;
+    max-height: 50px;
+    display: inline-block; /* Make it an inline-block to contain both elements */
+}
+
+.profileContainer:hover .dropdownContainer {
+    display: block;
+}
+
+.dropdownContainer {
+    background-color: rgb(19, 8, 8);
+    width: 90px;
+    display: none;
+    position: absolute;
+    right: 0px;
+    top: 30px;
+}
+
+.dropdownContainer ul {
+    display: grid;
+    padding: 0;
+    margin: 0;
+}
+
+.profilePic {
+    position: absolute;
+    border-radius: 50%;
+    top: 2px;
+    right: 10px;
+    display: none;
+}
+
+.user{
+    position: absolute;
+    color: #fff;
+    top: 1px;
+    right: 60px;
+}
+
+.dropdownElement {
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    display: block;
+}
+
+
+.LowerHead{
+    height: auto;
+    width: 100%;
+    max-width:  100%;
+    max-height: 100%;
+    background-color: rgb(77, 119, 204);
+    color: #fff;
+    padding: 10px;
+    justify-content: space-between;
+
+}
+
+hr {
+    margin: 0%;
+}
+
+ul{
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li{
+    list-style-type: none;
+    padding: 20px;
+}
+
+a{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    transition: letter-spacing 0.5s ease-in-out;
+}
+
+
+footer{
+   height: 80px;
+   background-color: rgb(40, 40, 40);
+   bottom: 0%;
+   left: 0%;
+   width: 100%;
+   text-align: center;
+}
+
+.Footer-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+}
+
+.contact{
+    background-color: rgb(50, 50, 50);
+    color: #fff;
+}
+
+.About{
+    background-color: rgb(100, 100, 100);
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+boldString{
+    font-size: 30px;
+    font-family: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 50px;
+}
+
+formattedString{
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.Mercury {
+    margin: auto;
+    width: 50%;
+    border: 5px solid rgb(31, 32, 35);
+    border-spacing: 10px;
+    content: "";
+    clear: both;
+    display: table;
+    color: #fff;
+    text-align: center;
+    background-color: #515663;
+  }
+
+.Venus {
+    
+    margin: auto;
+    width: 80%;
+    border: 5px solid rgb(31, 32, 35);
+    border-spacing: 10px;
+    content: "";
+    clear: both;
+    display: table;
+    color: #fff;
+    text-align: center;
+    background-color: #515663;
+}    
+
+.main-content {
+    position: absolute;
+    right: 0px;
+    width: auto;
+    border: 3px solid #000;
+    padding: 10px;
+
+
+
+}    
+
+/* Popup */
+
+{box-sizing: border-box;}
+
+
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+img {
+    width: 30%;
+    height: 30%;
+}
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
